@@ -125,3 +125,13 @@ body {
   color: var(--muted);
   line-height: 1.6;
 }
+
+/* モバイル幅ではファセットと結果を縦積みにする */
+@media (max-width: 640px) {
+  .app__body {
+    flex-direction: column;
+  }
+  .facets {
+    width: 100%;
+  }
+}
