@@ -1,0 +1,127 @@
+:root {
+  --bg: #f5f6f8;
+  --fg: #1b1f24;
+  --muted: #5c6773;
+  --line: #e1e4e8;
+  --accent: #2f6feb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', 'Hiragino Sans', Meiryo,
+    sans-serif;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.app__header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+}
+
+.app__brand {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+}
+
+.searchbar {
+  flex: 1;
+  max-width: 520px;
+  padding: 9px 14px;
+  font-size: 15px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.app__body {
+  display: flex;
+  gap: 24px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.facets {
+  width: 200px;
+  flex-shrink: 0;
+}
+
+.facets__group {
+  margin-bottom: 24px;
+}
+
+.facets__title {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 8px;
+}
+
+.facet {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  font-size: 14px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.facet:hover {
+  background: #eef1f5;
+}
+
+.facet--active {
+  background: #e7efff;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.results {
+  flex: 1;
+}
+
+.results__count {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.results__empty {
+  color: var(--muted);
+}
+
+/* 記事カード（現状はシンプルな表示） */
+.article-card {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.article-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--fg);
+  text-decoration: none;
+}
+
+.article-card__title:hover {
+  text-decoration: underline;
+}
+
+.article-card__excerpt {
+  margin: 6px 0 0;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.6;
+}
