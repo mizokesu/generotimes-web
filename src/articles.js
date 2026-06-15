@@ -1,4 +1,4 @@
-// DXTimes のモック記事データ（デモ用・実データではありません）
+// GeneroTimes のモック記事データ（デモ用・実データではありません）
 export const articles = [
   {
     id: 1,

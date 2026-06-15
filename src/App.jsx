@@ -30,7 +30,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app__header">
-        <div className="app__brand">DXTimes</div>
+        <div className="app__brand">GeneroTimes</div>
         <input
           className="searchbar"
           type="search"

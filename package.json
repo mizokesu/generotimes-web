@@ -1,9 +1,9 @@
 {
-  "name": "dxtimes-web",
+  "name": "generotimes-web",
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "description": "DXTimes 記事検索フロントエンド（デモ）",
+  "description": "GeneroTimes 記事検索フロントエンド（デモ）",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
